@@ -9,6 +9,9 @@ const AppStyles = createTheme({
           color: #bfc1c1;
           height: 100vh;
         }
+        .component1Container{
+            padding: 150px 0px;
+        }
         `,
     },
   },

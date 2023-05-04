@@ -7,7 +7,9 @@ const Component1 = () => (
   <Box className="component1-container">
     <Grid container spacing={2} justifyContent="center" justifyItems="center" alignItems="center" alignContent="center">
       <Grid item xl={4}>
-        <img src={Image1} />
+        <Box className="shrink">
+          <img src={Image1} />
+        </Box>
       </Grid>
       <Grid item xl={4}>
         <Grid
@@ -19,10 +21,14 @@ const Component1 = () => (
           alignContent="center"
         >
           <Grid item xl={12}>
-            <img src={Image2} />
+            <Box className="shrink">
+              <img src={Image2} />
+            </Box>
           </Grid>
           <Grid item xl={12}>
-            <img src={Image3} />
+            <Box className="shrink">
+              <img src={Image3} />
+            </Box>
           </Grid>
         </Grid>
       </Grid>

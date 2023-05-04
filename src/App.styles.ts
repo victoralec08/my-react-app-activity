@@ -114,13 +114,30 @@ const AppStyles = createTheme({
             -webkit-user-select: none; /* Safari */
             -ms-user-select: none; /* IE 10 and IE 11 */
             user-select: none; /* Standard syntax */
-          
+            transition: 0.5s ease;
         }
+
+        .card-component-action > div:hover {
+            transform: scale(1.1);
+            padding-left: 8px;
+          }
+
 
         .card-component-action > div > span {
             padding-bottom: 10px;
             border-bottom: 1px solid #cf1430;
             line-height: 48px;
+        }
+
+        .shrink img {
+            transition: .75s ease;
+        }
+            
+        .shrink img:hover{
+        -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        transform: scale(0.9);
+        transition: 0.5s ease;
         }
         `,
     },

@@ -10,12 +10,12 @@ const Component1 = () => {
     onClick: () => console.log('Read more'),
   };
   return (
-    <Box className="component2-container">
+    <Box className="component2Container">
       <Box component="h2" className="heading2">
         All the latest from AEG
       </Box>
       <Grid container spacing={2}>
-        <Grid item md={12} xl={4}>
+        <Grid item sm={12} md={6} xl={4}>
           <CardComponent
             imageAlt="image-1"
             image={Image1}
@@ -24,7 +24,7 @@ const Component1 = () => {
             readMore={readMore}
           />
         </Grid>
-        <Grid item md={12} xl={4}>
+        <Grid item sm={12} md={6} xl={4}>
           <CardComponent
             imageAlt="image-2"
             image={Image2}
@@ -34,7 +34,7 @@ const Component1 = () => {
             readMore={readMore}
           />
         </Grid>
-        <Grid item md={12} xl={4}>
+        <Grid item sm={12} md={6} xl={4}>
           <CardComponent
             imageAlt="image-3"
             image={Image3}

@@ -4,7 +4,7 @@ import Component2 from './component/component2';
 
 const HomeScreen = () => (
   <Container maxWidth="xl">
-    <Box className="index-containter">
+    <Box className="indexContainer">
       <Component1 />
       <Component2 />
     </Box>

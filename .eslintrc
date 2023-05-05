@@ -8,7 +8,7 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
-    "no-console": 1,
+    "no-console": 0,
     "no-loops/no-loops": 1,
     "array-element-newline": ["warn", "consistent"],
     "arrow-body-style": ["warn", "as-needed"],

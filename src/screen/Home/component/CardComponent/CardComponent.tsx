@@ -21,19 +21,19 @@ interface CardComponentProps {
 const CardComponent = (props: CardComponentProps) => {
   const { imageAlt, image, title, description, readMore } = props;
   return (
-    <Card raised={false} className="card-component">
+    <Card raised={false} className="cardComponent">
       <CardActionArea>
-        <CardMedia component="img" image={image} alt={imageAlt ?? ''} className="card-component-content-media" />
-        <CardContent className="card-component-content">
-          <Typography gutterBottom variant="h5" className="card-component-content-title" component="div">
+        <CardMedia component="img" image={image} alt={imageAlt ?? ''} className="cardComponentContentMedia" />
+        <CardContent className="cardComponentContent">
+          <Typography gutterBottom variant="h5" className="cardComponentContentTitle" component="div">
             {title}
           </Typography>
-          <Typography variant="body2" className="card-component-content-description">
+          <Typography variant="body2" className="cardComponentContentDescription">
             {description}
           </Typography>
         </CardContent>
       </CardActionArea>
-      <CardActions className="card-component-action">
+      <CardActions className="cardComponentAction">
         <Box onClick={() => readMore.onClick()}>
           <Box component="span">{readMore.label}</Box>
         </Box>

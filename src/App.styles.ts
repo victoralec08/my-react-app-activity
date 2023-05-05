@@ -5,141 +5,159 @@ const AppStyles = createTheme({
   typography: appTypography,
   components: {
     MuiCssBaseline: {
-      styleOverrides: `
-        html,
-        body {
-            background-color: #0e1414;
-            color: #fff;
-            height: 100vh;
-        }
+      styleOverrides: {
+        'html, body': {
+          backgroundColor: '#0e1414',
+          color: '#fff',
+          height: '100vh',
+        },
 
-        .bodyContainer {
-            padding: 150px 0px;
-        }
+        '.bodyContainer': {
+          padding: '150px 0px',
+        },
 
-        .index-containter{
-            max-width: 1210px;
-            margin: 0 auto;
-        }
+        '.indexContainer': {
+          maxWidth: '1210px',
+          margin: '0 auto',
+        },
 
-        .component1-container {
-            margin-bottom: 240px;
-        }
+        '.component1Container': {
+          marginBottom: '240px',
+        },
 
-        .heading3 {
-            font-size: 26px !important;
-            font-weight: 200 !important;
-            position: relative;
-            padding-bottom: 25px;
-        }
+        '.heading3': {
+          fontSize: '26px !important',
+          fontWeight: '200 !important',
+          position: 'relative',
+          paddingBottom: '10px',
+          borderBottom: '1px solid #fff',
+          marginBottom: '30px !important',
+        },
 
-        .heading3:after {
-            content: " ";
-            display: block;
-            position: absolute;
-            height: 1px;
-            background: #fff;
-            top: 50px;
-            left: 0;
-            width: 100%;
-        }
+        '.heading2, .heading3, .heading6': {
+          textTransform: 'uppercase',
+          fontWeight: '300',
+        },
 
-        .heading2, .heading3, .heading6 {
-            text-transform: uppercase;
-            font-weight: 300;
-        }
+        '.heading6': {
+          color: '#cf1430',
+          fontSize: '16px !important',
+        },
 
-        .heading6 {
-            color: #cf1430;
-            font-size: 16px !important;
-        }
+        '.heading2': {
+          textAlign: 'center',
+          fontSize: '43px',
+          color: '#fff',
+        },
 
-        .heading2 {
-            text-align: center;
-            font-size: 43px;
-            color: #fff;
-        }
+        '.component1Element1': {
+          paddingBottom: '35px',
+          lineHeight: '1.5',
+          fontSize: '18px',
+          letterSpacing: '1px',
+          color: '#dfe0e0 !important',
+        },
 
-        .component1-element1 {
-            padding-bottom: 35px;
-            line-height: 1.5;
-            font-size: 18px;
-            letter-spacing: 1px;
-            color: #dfe0e0 !important;
-        }
+        '.component2Element2': {
+          fontWeight: '600 !important',
+          lineHeight: '1.5',
+          letterSpacing: '1px',
+          fontSize: '18px',
+        },
 
-        .component2-element2 {
-            font-weight: 600 !important;   
-            line-height: 1.5; 
-            letter-spacing: 1px;
-            font-size: 18px;
-        }
+        '.cardComponent': {
+          borderRadius: '0px !important',
+          background: 'transparent !important',
+          color: '#fff !important',
+          boxShadow: 'none !important',
+        },
 
-        .card-component {
-            border-radius: 0px !important;
-            background: transparent !important;
-            color: #fff !important;
-            box-shadow: none !important;
-        }
+        '.cardComponentContentMedia': {
+          borderBottom: '5px solid #cf1430',
+        },
 
-        .card-component-content-media {
-            border-bottom: 5px solid #cf1430;
-        }
+        '.cardComponentContent': {
+          padding: '20px 0px 0px 0px !important',
+          color: '#b2b3b3 !important',
+        },
 
-        .card-component-content{
-            padding: 20px 0px 0px 0px !important;
-            color: #b2b3b3 !important;
-        }
-        
-        .card-component-content-title{
-            font-size: 18px !important;
-            color: #fff !important;
-            margin-bottom: 12px !important;
-        }
+        '.cardComponentContentTitle': {
+          fontSize: '18px !important',
+          color: '#fff !important',
+          marginBottom: '12px !important',
+        },
 
-        .card-component-content-description{
-            color: #b2b3b3 !important;
-            font-size: 16px !important;
-            line-height: 1.75 !important;
-        }
+        '.cardComponentContentDescription': {
+          color: '#b2b3b3 !important',
+          fontSize: '16px !important',
+          lineHeight: '1.75 !important',
+        },
 
-        .card-component-action {
-            padding: 8px 0px !important;
-        }
+        '.cardComponentAction': {
+          padding: '8px 0px !important',
 
-        .card-component-action > div {
-            cursor: pointer !important;
-            color: #fff;
-            font-weight: 400;
-            -webkit-user-select: none; /* Safari */
-            -ms-user-select: none; /* IE 10 and IE 11 */
-            user-select: none; /* Standard syntax */
-            transition: 0.5s ease;
-        }
+          '& > div': {
+            cursor: 'pointer !important',
+            color: '#fff',
+            fontWeight: 400,
+            webkitUserSelect: 'none' /* Safari */,
+            msUserSelect: 'none' /* IE 10 and IE 11 */,
+            userSelect: 'none' /* Standard syntax */,
+            transition: '0.5s ease',
 
-        .card-component-action > div:hover {
-            transform: scale(1.1);
-            padding-left: 8px;
-          }
+            '&:hover': {
+              transform: 'scale(1.1)',
+              paddingLeft: '8px',
+            },
 
+            '& > span': {
+              paddingBottom: '10px',
+              borderBottom: '1px solid #cf1430',
+              lineHeight: '48px',
+            },
+          },
+        },
 
-        .card-component-action > div > span {
-            padding-bottom: 10px;
-            border-bottom: 1px solid #cf1430;
-            line-height: 48px;
-        }
+        '.shrink img': {
+          transition: '.75s ease',
 
-        .shrink img {
-            transition: .75s ease;
-        }
-            
-        .shrink img:hover{
-        -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-        transform: scale(0.9);
-        transition: 0.5s ease;
-        }
-        `,
+          '&:hover': {
+            webkitTransform: 'scale(0.9)',
+            msTransform: 'scale(0.9)',
+            transform: 'scale(0.9)',
+            transition: '0.5s ease',
+          },
+        },
+
+        '@media (max-width: 992px)': {
+          '.indexContainer': {
+            maxWidth: '768px',
+          },
+        },
+
+        '@media (max-width: 768px)': {
+          '.indexContainer': {
+            maxWidth: '600px',
+          },
+        },
+
+        '@media (max-width: 600px)': {
+          '.indexContainer': {
+            maxWidth: '420px',
+          },
+        },
+
+        '@media (max-width: 420px)': {
+          '.indexContainer': {
+            maxWidth: '280px',
+          },
+
+          '.shrink img': {
+            width: '280px',
+            height: 'auto',
+          },
+        },
+      },
     },
   },
 });

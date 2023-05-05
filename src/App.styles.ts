@@ -129,15 +129,32 @@ const AppStyles = createTheme({
           },
         },
 
+        '.dialogContent': {
+          background: '#0e1414 !important',
+          color: '#fff !important',
+        },
+
         '@media (max-width: 992px)': {
           '.indexContainer': {
             maxWidth: '768px',
+          },
+
+          '.component1Container': {
+            marginBottom: '140px',
           },
         },
 
         '@media (max-width: 768px)': {
           '.indexContainer': {
             maxWidth: '600px',
+          },
+
+          '.component1Container': {
+            marginBottom: '100px',
+          },
+
+          '.heading2': {
+            fontSize: '38px',
           },
         },
 
